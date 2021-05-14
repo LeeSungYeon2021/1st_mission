@@ -1,0 +1,49 @@
+.main {
+	border:1px solid black;
+	width:100%;
+	height:auto;
+}
+
+table {
+	width:100%;
+	margin:0px;
+	
+}
+
+thead >tr > th{ 
+	text-align : center;
+}
+
+tbody {
+	margin-left:0px;
+}
+
+tbody > tr >  input {
+	display:inline;
+	width:20px;
+}
+.calendar_date {
+	border:1px solid black;
+	height:100px;
+	width:270px;
+}
+
+.calendar_title {
+	width:100%;
+}
+
+.calendar_title > span{
+
+	width:100px;
+}
+
+.calendar_content {
+	width:150px;
+}
+
+.col{
+	height:100px;
+	border:1px solid black;
+	width:150px;
+}
+
