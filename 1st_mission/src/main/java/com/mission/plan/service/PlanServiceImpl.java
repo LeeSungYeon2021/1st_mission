@@ -1,4 +1,4 @@
-package commission.plan.service;
+package com.mission.plan.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

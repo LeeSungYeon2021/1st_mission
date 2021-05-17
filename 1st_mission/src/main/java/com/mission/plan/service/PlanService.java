@@ -1,4 +1,4 @@
-package commission.plan.service;
+package com.mission.plan.service;
 
 import com.mission.plan.vo.Plan;
 
