@@ -5,6 +5,7 @@
 $(function() {
 	dateInput();
 	calendar();	
+	selectPlan();
 });
 
 
@@ -33,7 +34,8 @@ function dateInput(data,btnDate) {
 	currentMonth = date.getMonth()+1;
 	
 	$("#currentYear").val(currentYear+'년');
-	$("#currentMonth").val(currentMonth+'월');	
+	$("#currentMonth").val(currentMonth+'월');
+		
 }
 
 function calendar() {
@@ -108,6 +110,12 @@ function calendar() {
 
 }
 
+function selectPlan() {
+	$.ajax({
+		url:"${path}/planSelect",
+		
+	});
+}
 $("#prevBtn").on('click', function() {	
 	
 	if(currentMonth == 1){
@@ -122,7 +130,7 @@ $("#prevBtn").on('click', function() {
 });
 
 $("#nextBtn").on('click', function() {	
-	console.log('???');
+	
 	if(currentMonth == 12){
 		currentMonth = 0;
 		currentYear += 1;
@@ -138,6 +146,6 @@ $("#nextBtn").on('click', function() {
 $(document).on('click','.inputDay',function(e){
 		$(".modal").modal('show');	
 		var target = $(e.target);
-		console.log(target.val());
+		
 })
 

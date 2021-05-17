@@ -53,36 +53,41 @@
 
 
 		<!-- 일정 modal -->
-		<div class="modal" tabindex="-1" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">일정 등록</h5>
-						<button type="button" class="close" data-dismiss="modal"
-							aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-
-						<div>
-							<input class="form-conrol" id="plan-title" type="text"
-								placeholder="일정 제목을 입력해주세요"> <br /> <br />
+		<form action="${path }plan_enroll" method="post">
+			<div class="modal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">일정 등록</h5>
+							<button type="button" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
 						</div>
-						<div>
-							<textarea></textarea>
+						<div class="modal-body">
+							<div>
+								<span>구분</span>
+								<select id="plan_select" name="plan_select">
+									<option value="일반">일반</option>
+									<option value="중요">중요</option>
+								</select>
+							</div>
+							<br>
+							<div>
+								<input name="plan_title" class="form-conrol" id="plan-title" type="text"
+									placeholder="일정 제목을 입력해주세요"> <br /> <br />
+							</div>
+							<div id="plan_content">
+								<textarea name="plan_content"></textarea>
+							</div>
 						</div>
-						<div>
-							<input type="checkbox">							
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary">등록</button>
 						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">등록</button>
 					</div>
 				</div>
 			</div>
-		</div>
-
+		</form>
 
 
 

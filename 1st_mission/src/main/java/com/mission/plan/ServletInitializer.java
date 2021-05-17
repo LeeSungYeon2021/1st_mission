@@ -1,4 +1,4 @@
-package com.wemb.mission;
+package com.mission.plan;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
